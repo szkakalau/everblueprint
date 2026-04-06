@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ever Blueprint — Your Personal Longevity Protocol</title>
+  <meta name="description" content="Ever Blueprint: science-based daily anti-aging plan. Personalized protocol, supplements, and habits — everblueprint.com" />
+  <link rel="canonical" href="https://everblueprint.com/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="https://everblueprint.com/">Ever Blueprint</a>
+      <a class="btn btn-ghost" href="#waitlist">Get Early Access</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="container hero-inner">
+        <h1 class="hero-title">Your Personal Longevity Protocol</h1>
+        <p class="hero-sub">
+          Stop guessing your supplements, fasting, and routines.<br />
+          Get a science-based daily anti-aging plan.
+        </p>
+        <a class="btn btn-primary" href="#waitlist">Get Early Access</a>
+      </div>
+    </section>
+
+    <!-- Problem -->
+    <section class="section problem" id="problem">
+      <div class="container narrow">
+        <h2 class="section-title">Longevity is confusing.</h2>
+        <ul class="bullet-list">
+          <li>Hundreds of supplements. No clear stack.</li>
+          <li>Conflicting research every week.</li>
+          <li>Expensive trial and error.</li>
+        </ul>
+        <p class="problem-conclusion">Most people are guessing.</p>
+      </div>
+    </section>
+
+    <!-- Solution / Example protocol -->
+    <section class="section solution" id="solution">
+      <div class="container">
+        <h2 class="section-title center">We turn research into a simple daily protocol.</h2>
+        <div class="protocol-card" aria-label="Example daily protocol">
+          <div class="protocol-block">
+            <h3 class="protocol-time">Morning</h3>
+            <ul class="protocol-items">
+              <li><span class="icon" aria-hidden="true">☀</span> Sun exposure 10 min</li>
+              <li><span class="icon" aria-hidden="true">💊</span> NMN + Omega-3</li>
+              <li><span class="icon" aria-hidden="true">🍵</span> Matcha instead of coffee</li>
+            </ul>
+          </div>
+          <div class="protocol-block">
+            <h3 class="protocol-time">Afternoon</h3>
+            <ul class="protocol-items">
+              <li><span class="icon" aria-hidden="true">🚶</span> Walk after meals</li>
+              <li><span class="icon" aria-hidden="true">💊</span> Berberine before carbs</li>
+            </ul>
+          </div>
+          <div class="protocol-block">
+            <h3 class="protocol-time">Night</h3>
+            <ul class="protocol-items">
+              <li><span class="icon" aria-hidden="true">🌙</span> Magnesium glycinate</li>
+              <li><span class="icon" aria-hidden="true">😴</span> Glycine + collagen</li>
+              <li><span class="icon" aria-hidden="true">📵</span> Blue-light blocking</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="section benefits" id="benefits">
+      <div class="container narrow">
+        <h2 class="section-title center">What you get</h2>
+        <ul class="check-list">
+          <li>Personalized longevity protocol</li>
+          <li>Supplement stack guidance</li>
+          <li>Lifestyle &amp; habit optimization</li>
+          <li>Monthly research updates</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Social proof -->
+    <section class="section social" id="social">
+      <div class="container narrow center-text">
+        <p class="social-line">Currently onboarding early beta users.</p>
+        <p class="social-cta">Join the waitlist.</p>
+      </div>
+    </section>
+
+    <!-- Email capture -->
+    <section class="section waitlist" id="waitlist">
+      <div class="container narrow">
+        <div class="waitlist-card">
+          <h2 class="waitlist-title">Get early access</h2>
+          <form class="waitlist-form" action="#" method="post" id="waitlist-form">
+            <label class="sr-only" for="email">Email</label>
+            <input
+              class="email-input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="you@email.com"
+              required
+              autocomplete="email"
+            />
+            <button class="btn btn-primary btn-block" type="submit">Join waitlist</button>
+          </form>
+          <p class="form-note" id="form-note" hidden>Thanks — we’ll be in touch.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-copy">&copy; Ever Blueprint · <a class="footer-link" href="https://everblueprint.com/">everblueprint.com</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("waitlist-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      var note = document.getElementById("form-note");
+      note.hidden = false;
+      this.reset();
+    });
+  </script>
+</body>
+</html>
